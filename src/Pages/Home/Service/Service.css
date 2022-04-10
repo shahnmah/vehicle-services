@@ -1,0 +1,9 @@
+.service{
+    border: 1px solid rgba(0, 0, 0, 0.452);
+}
+.service img{
+    width: 100%;
+}
+.service .details{
+    padding: 15px;
+}
