@@ -1,12 +1,13 @@
 import React from 'react';
 import './Home.css'
 import Services from '../Services/Services'
+import Experts from '../Experts/Experts';
 
 const Home = () => {
     return (
         <div>
-            <h2>Home is where the heart is</h2>
             <Services></Services>
+            <Experts></Experts>
         </div>
     );
 };
