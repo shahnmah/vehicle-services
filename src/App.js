@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <Header></Header>
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
