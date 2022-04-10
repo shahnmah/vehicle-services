@@ -3,13 +3,11 @@ import './Footer.css'
 
 
 const Footer = () => {
-    let getYear = () => {
-        let currentYear = new Date().getFullYear();
-        return currentYear;
-    };
+    const today = new Date();
+    const year = today.getFullYear();
     return (
-        <footer>
-            <p><small>Copyright &copy; {getYear()} </small></p>
+        <footer className='text-center bg-light py-3'>
+            <p><small>Copyright &copy; {year} </small></p>
         </footer>
     );
 };
