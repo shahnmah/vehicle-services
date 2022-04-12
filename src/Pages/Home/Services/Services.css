@@ -6,3 +6,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 15px;
 }
+
+@media only screen and (max-width: 600px){
+    .services-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
