@@ -8,6 +8,7 @@ import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Login = () => {
     const emailRef = useRef('')
@@ -34,7 +35,7 @@ const Login = () => {
     const handleSubmit = event => {
         event.preventDefault()
         const email = emailRef.current.value;
-        const password = passwordRef.current.value;
+        const password = passwordRef.current.value; 
         signInWithEmailAndPassword(email, password)
     }
     const resatPassword = async() => {
@@ -49,6 +50,7 @@ const Login = () => {
     }
     return (
         <div className='container w-50 mx-auto my-4'>
+            <PageTitle title="Login"></PageTitle>
             <h2 className='text-primary text-center mt-3'>Login Here</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

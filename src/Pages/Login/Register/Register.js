@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { async } from '@firebase/util';
 import Loading from '../../Shared/Loading/Loading';
+import PageTitle from '../../Shared/PageTitle/PageTitle'
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -40,6 +41,7 @@ const Register = () => {
     }
     return (
         <div className='container w-50 mx-auto my-4'>
+            <PageTitle title="Sign Up"></PageTitle>
             <h2 className='text-center text-primary mb-3'>Register Here</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
